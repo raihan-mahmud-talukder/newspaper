@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,19 +9,24 @@
     <style>
 
     </style>
-    
+
 </head>
+
 <body>
     <div id="wrapper">
         <div id="header">
-
+            <h1>Today's News</h1>
+            <p></p>
         </div>
         <div id="footer">
         </div>
     </div>
     <script>
-
+        setInterval(() => {
+            document.getElementById('header').getElementsByTagName('p')[0].innerHTML = `${new Date().toDateString()}, ${new Date().toLocaleTimeString('en-GB')}`
+        }, 1000)
         document.getElementById('footer').innerHTML = `COPYRIGHT ${new Date().getFullYear()} © AITS`
-            </script>
+    </script>
 </body>
+
 </html>
