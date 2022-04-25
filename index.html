@@ -18,7 +18,7 @@
             border-radius: 1vw;
         }
 
-        #header {
+        header {
             color: white;
             background: black;
             height: 5vh;
@@ -28,11 +28,11 @@
             justify-content: space-between;
             align-items: center;
         }
-        #header h1, h3 {
+        header h1, h3 {
             margin: 0%;
             padding: 1%;
         }
-        #footer {
+        footer {
             color: white;
             background: black;
             height: 5vh;
@@ -41,7 +41,7 @@
             text-align: center;
         }
 
-        #footer p {
+        footer p {
             padding: 1%;
             margin: 0%;
             font-weight: bold;
@@ -53,18 +53,17 @@
 
 <body>
     <div id="wrapper">
-        <div id="header">
+        <header>
             <h1>Today's News</h1>
             <h3></h3>
-        </div>
-        <div id="footer">
-        </div>
+        </header>
+        <footer></footer>
     </div>
     <script>
         setInterval(() => {
-            document.getElementById('header').getElementsByTagName('h3')[0].innerHTML = `${new Date().toDateString()}, ${new Date().toLocaleTimeString('en-GB')}`
+            document.getElementsByTagName('header')[0].getElementsByTagName('h3')[0].innerHTML = `${new Date().toDateString()}, ${new Date().toLocaleTimeString('en-GB')}`
         }, 1000)
-        document.getElementById('footer').innerHTML = `<p>Copyright: ${new Date().getFullYear()} © Shaikh Raihan Mahmud Talukder</p>`
+        document.getElementsByTagName('footer')[0].innerHTML = `<p>Copyright: ${new Date().getFullYear()} © Shaikh Raihan Mahmud Talukder</p>`
     </script>
 </body>
 
