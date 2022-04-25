@@ -10,20 +10,43 @@
         body {
             background: lightgray;
         }
+
         #wrapper {
             background: white;
             width: 95vw;
             margin: auto;
-            height: auto;
             border-radius: 1vw;
         }
-        /* #header {
+
+        #header {
             color: white;
             background: black;
             height: 5vh;
+            border-top-left-radius: 1vw;
+            border-top-right-radius: 1vw;
             display: flex;
             justify-content: space-between;
-        } */
+            align-items: center;
+        }
+        #header h1, h3 {
+            margin: 0%;
+            padding: 1%;
+        }
+        #footer {
+            color: white;
+            background: black;
+            height: 5vh;
+            border-bottom-left-radius: 1vw;
+            border-bottom-right-radius: 1vw;
+            text-align: center;
+        }
+
+        #footer p {
+            padding: 1%;
+            margin: 0%;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
     </style>
 
 </head>
@@ -32,16 +55,16 @@
     <div id="wrapper">
         <div id="header">
             <h1>Today's News</h1>
-            <p></p>
+            <h3></h3>
         </div>
         <div id="footer">
         </div>
     </div>
     <script>
         setInterval(() => {
-            document.getElementById('header').getElementsByTagName('p')[0].innerHTML = `${new Date().toDateString()}, ${new Date().toLocaleTimeString('en-GB')}`
+            document.getElementById('header').getElementsByTagName('h3')[0].innerHTML = `${new Date().toDateString()}, ${new Date().toLocaleTimeString('en-GB')}`
         }, 1000)
-        document.getElementById('footer').innerHTML = `COPYRIGHT ${new Date().getFullYear()} © AITS`
+        document.getElementById('footer').innerHTML = `<p>Copyright: ${new Date().getFullYear()} © Shaikh Raihan Mahmud Talukder</p>`
     </script>
 </body>
 
