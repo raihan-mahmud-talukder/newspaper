@@ -14,7 +14,7 @@
         #wrapper {
             background: white;
             width: 95vw;
-            margin: auto;
+            margin: 3% auto;
             border-radius: 1vw;
         }
 
@@ -27,11 +27,24 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            /* flex-wrap: wrap; */
         }
-        header h1, h3 {
+
+        header h1,
+        h3 {
             margin: 0%;
-            padding: 1%;
+            padding: 0% 1%;
         }
+
+        @media (max-width: 440px) {
+
+            header h1,
+            h3 {
+                font-size: 2vh;
+
+            }
+        }
+
         footer {
             color: white;
             background: black;
@@ -42,21 +55,31 @@
         }
 
         footer p {
-            padding: 1%;
+            padding: 1.5vh;
             margin: 0%;
             font-weight: bold;
             text-transform: uppercase;
         }
+
         #container {
-         display: flex;
-         flex-wrap: wrap;
-         justify-content: center;   
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
         }
+
+        a {
+            text-decoration: none;
+        }
+
         img {
             width: 200px;
             height: 35px;
-            /* margin: 1%; */
-padding: 15px;
+            margin: 15px;
+            padding: 15px;
+        }
+
+        img:hover {
+            background: lightgray;
         }
     </style>
 
@@ -69,28 +92,226 @@ padding: 15px;
             <h3></h3>
         </header>
         <div id="container">
-                <img src="images/Ittefaq-e-paper-7.gif" alt="ittefaq">
-                <img src="images/eJanakantha-7.gif" alt="janokontho">
-                <img src="images/eJugantor-7.gif" alt="jugantor">
-                <img src="images/eSamakal-7.gif" alt="somokal">
-                <img src="images/Kalerkantho-epaper-7.gif" alt="kalerkontho">
-                <img src="images/e-AlokitoBangladesh-7.gif" alt="alokito-bangladesh">
-                <img src="images/eKaratoa-7.gif" alt="korotowa">
-                <img src="images/eKaratoa-7.gif" alt="korotowa">
-                <img src="images/eKaratoa-7.gif" alt="korotowa">
-                <img src="images/eKaratoa-7.gif" alt="korotowa">
-                <img src="images/eKaratoa-7.gif" alt="korotowa">
-                <img src="images/eKaratoa-7.gif" alt="korotowa">
-                <img src="images/eKaratoa-7.gif" alt="korotowa">
-                <img src="images/eKaratoa-7.gif" alt="korotowa">
-                <img src="images/eKaratoa-7.gif" alt="korotowa">
-                <img src="images/eKaratoa-7.gif" alt="korotowa">
-                <img src="images/eKaratoa-7.gif" alt="korotowa">
-                <img src="images/eKaratoa-7.gif" alt="korotowa">
-                <img src="images/eKaratoa-7.gif" alt="korotowa">
-                <img src="images/eKaratoa-7.gif" alt="korotowa">
-                <img src="images/eKaratoa-7.gif" alt="korotowa">
-                <img src="images/eKaratoa-7.gif" alt="korotowa">
+            <a href="http://epaper.ittefaq.com.bd" target="_blank"><img src="images/ittefaq.gif" alt="ittefaq">
+            </a>
+            <a href="http://edailyjanakantha.com" target="_blank"><img src="images/janakantha.gif" alt="janakantha">
+            </a>
+            <a href="http://ejugantor.com" target="_blank">
+                <img src="images/jugantor.gif" alt="jugantor">
+            </a>
+            <a href="http://www.esamakal.net" target="_blank">
+                <img src="images/samakal.gif" alt="samakal">
+            </a>
+            <a href="http://www.ekalerkantho.com" target="_blank">
+                <img src="images/kaler-kantho.gif" alt="kalerkantho">
+            </a>
+            <a href="http://alokitobangladesh.com/epaper" target="_blank">
+                <img src="images/alokito-bangladesh.gif" alt="alokito bangladesh">
+            </a>
+            <a href="http://ekaratoa.com" target="_blank">
+                <img src="images/karatoa.gif" alt="karatoa">
+            </a>
+            <a href="http://egonokantho.com" target="_blank">
+                <img src="images/gono-kantho.gif" alt="gono kantho">
+            </a>
+            <a href="http://eamadershomoy.com" target="_blank">
+                <img src="images/amader-shomoy.gif" alt="amader-shomoy" />
+            </a>
+            <a href="http://www.ebdpratidin.com" target="_blank">
+                <img src="images/bangladesh-pratidin.gif" alt="bangladesh pratidin">
+            </a>
+            <a href="http://www.ejjdin.com" target="_blank">
+                <img src="images/jaijaidin.jpg" alt="jaijaidin">
+            </a>
+            <a href="http://edailysun.com" target="_blank">
+                <img src="images/daily-sun.gif" alt="daily sun">
+            </a>
+            <a href="http://epaper.thedailystar.net" target="_blank">
+                <img src="images/daily-star.jpg" alt="daily star">
+            </a>
+            <a href="https://epaper.observerbd.com" target="_blank">
+                <img src="images/observer.jpg" alt="observer">
+            </a>
+            <a href="http://edailypeoplestime.com" target="_blank">
+                <img src="images/people's-time.png" alt="people's time">
+            </a>
+            <a href="https://epaper.dhakatribune.com" target="_blank">
+                <img src="images/dhaka-tribune.png" alt="dhaka tribune">
+            </a>
+            <a href="http://edailyvorerpata.com" target="_blank">
+                <img src="images/vorer-pata.png" alt="vorer pata">
+            </a>
+            <a href="http://bangla.bdnews24.com" target="_blank">
+                <img src="images/bdnews24.png" alt="bdnews24">
+            </a>
+            <a href="http://www.banglanews24.com" target="_blank">
+                <img src="images/banglanews24.jpg" alt="banglanews24">
+            </a>
+            <a href="https://epaper.newagebd.net" target="_blank">
+                <img src="images/new-age.png" alt="newage">
+            </a>
+            <a href="https://epaper.thefinancialexpress.com.bd" target="_blank">
+                <img src="images/financial-express.png" alt="financial express">
+            </a>
+            <a href="https://www.dailyinqilab.com/epaper" target="_blank">
+                <img src="images/inqilab.png" alt="inqilab">
+            </a>
+            <a href="https://eamarsangbad.com" target="_blank">
+                <img src="images/amar-sangbad.png" alt="amar sangbad">
+            </a>
+            <a href="https://epaper.protidinersangbad.com" target="_blank">
+                <img src="images/protidiner-sangbad.png" alt="protidiner sangbad">
+            </a>
+            <a href="https://epaper.bonikbarta.net" target="_blank">
+                <img src="images/bonik-barta.jpg" alt='bonik barta'>
+            </a>
+            <a href="https://epaper.dailysangram.com" target="_blank">
+                <img src="images/sangram.jpg" alt="sangram">
+            </a>
+            <a href="https://ebhorerkagoj.com" target="_blank">
+                <img src="images/bhorer-kagoj.webp" alt="bhorer kagoj">
+            </a>
+            <a href="https://epaper.sangbad.net.bd" target="_blank">
+                <img src="images/sangbad.png" alt="sangbad">
+            </a>
+            <a href="https://epaper.manobkantha.com.bd" target="_blank">
+                <img src="images/manob-kantha.png" alt="manob kantha">
+            </a>
+            <a href="https://esuprobhat.com/index.php?" target="_blank">
+                <img src="images/suprobhat.png" alt="suprobhat">
+            </a>
+            <a href="https://www.egramerkagoj.com" target="_blank">
+                <img src="images/gramer-kagoj.jpg" alt="gramer kagoj">
+            </a>
+            <a href="https://epaper.dainikdinkal.net" target="_blank">
+                <img src="images/dinkal.jpg" alt="dinkal">
+            </a>
+            <a href="https://bangladeshpost.net/epaper" target="_blank">
+                <img src="images/bangladesh-post.png" alt="bangladesh post">
+            </a>
+            <a href="http://ebhorerdak.com" target="_blank">
+                <img src="images/bhorer-dak.jpg" alt="bhorer dak">
+            </a>
+            <a href="https://epaper.shomoyeralo.com" target="_blank">
+                <img src="images/shomoyer-alo.png" alt="shomoyer alo">
+            </a>
+            <a href="https://esharebiz.net" target="_blank">
+                <img src="images/share-biz.png" alt="share biz">
+            </a>
+            <a href="http://www.edailybartoman.net" target="_blank">
+                <img src="images/bartoman.png" alt="bartoman">
+            </a>
+            <a href="https://epaper.ajkalerkhobor.net" target="_blank">
+                <img src="images/ajkaler-khobor.jpg" alt="ajkaler khobor">
+            </a>
+            <a href="https://esangbadkonika.com" target="_blank">
+                <img src="images/sangbad-konika.jpg" alt="sangbad konika">
+            </a>
+            <a href="https://www.deshrupantor.com/epaper" target="_blank">
+                <img src="images/desh-rupantor.png" alt="desh rupantor">
+            </a>
+            <a href="http://epaper.bangladesherkhabor.net" target="_blank">
+                <img src="images/bangladesher-khabor.png" alt="bangladesher khabor">
+            </a>
+            <a href="https://epaper.bd-bulletin.com" target="_blank">
+                <img src="images/bangladesh-bulletin.gif" alt="bangladesh bulletin">
+            </a>
+            <a href="https://epaper.jagaran24.com" target="_blank">
+                <img src="images/jagaran.png" alt="jagaran">
+            </a>
+            <a href="https://businesspostbd.com" target="_blank">
+                <img src="images/business-post.png" alt="business post">
+            </a>
+            <a href="https://epaper.ajkerpatrika.com" target="_blank">
+                <img src="images/ajker-patrika.svg" alt="ajker patrika">
+            </a>
+            <a href="http://www.enayadiganta.com" target="_blank">
+                <img src="images/naya-diganta.png" alt="korotowa">
+            </a>
+            <a href="https://amaderorthoneeti.com/epaper" target="_blank">
+                <img src="images/amader-orthoneeti.gif" alt="amader orthoneeti">
+            </a>
+            <a href="https://thebangladeshtoday.com/?cat=27" target="_blank">
+                <img src="images/bangladesh-today.png" alt="bangladesh today">
+            </a>
+            <a href="https://www.edainikazadi.net" target="_blank">
+                <img src="images/azadi.png" alt="azadi">
+            </a>
+            <a href="https://thedailynewnation.com" target="_blank">
+                <img src="images/new-nation.png" alt="mew nation">
+            </a>
+            <a href="https://epaper.odhikar.news" target="_blank">
+                <img src="images/odhikar.png" alt="odhikar">
+            </a>
+            <a href="http://ekholakagoj.com" target="_blank">
+                <img src="images/khola-kagoj.png" alt="khola kagoj">
+            </a>
+            <a href="https://epaper.swadeshpratidin.com" target="_blank">
+                <img src="images/swadesh-pratidin.png" alt="swadesh pratidin">
+            </a>
+            <a href="https://epaper.dhakatimes24.com" target="_blank">
+                <img src="images/dhaka-times.webp" alt="dhaka times">
+            </a>
+            <a href="https://epaper.nayashatabdi.com" target="_blank">
+                <img src="images/naya-shatabdi.png" alt="naya shatabdi">
+            </a>
+            <a href="http://epaper.dhakaprotidin.com" target="_blank">
+                <img src="images/dhaka-protidin.png" alt="dhaka protidin">
+            </a>
+            <a href="https://epaper.shampratikdeshkal.com" target="_blank">
+                <img src="images/shampratik-deshkal.png" alt="shampratik deshkal">
+            </a>
+            <a href="http://epaper.dailysokalersomoy.com" target="_blank">
+                <img src="images/sokaler-somoy.png" alt="sokaler somoy">
+            </a>
+            <a href="http://etritiyamatra.com" target="_blank">
+                <img src="images/tritiya-matra.jpg" alt="tritiya matra">
+            </a>
+            <a href="https://eajkerdarpon.com" target="_blank">
+                <img src="images/ajker-darpon.png" alt="ajker darpon">
+            </a>
+            <a href="https://bhorersomoy.com/epaper/index.php" target="_blank">
+                <img src="images/bhorer-somoy.jpg" alt="bhorer somoy">
+            </a>
+            <a href="https://dailyasiabani.com/epaper/index.php" target="_blank">
+                <img src="images/asia-bani.jpg" alt="asia bani">
+            </a>
+            <a href="https://dailyswadhinbangla.com/epaper/index.php" target="_blank">
+                <img src="images/swadhin-bangla.jpg" alt="swadhin bangla">
+            </a>
+            <a href="https://www.ebanglakagoj.com" target="_blank">
+                <img src="images/bangla-kagoj.jpg" alt="bangla kagoj">
+            </a>
+            <a href="https://e-paper.jobabdihi.com" target="_blank">
+                <img src="images/jobabdihi.png" alt="jobabdihi">
+            </a>
+            <a href="https://www.eamaderkantha.com" target="_blank">
+                <img src="images/amader-kantha.png" alt="amader kantha">
+            </a>
+            <a href="https://dailyasianage.com/ep" target="_blank">
+                <img src="images/asian-age.png" alt="asian age">
+            </a>
+            <a href="https://ourtimebd.com/epaper" target="_blank">
+                <img src="images/our-time.gif" alt="our time">
+            </a>
+            <a href="https://dailycitizentimes.com/epaper" target="_blank">
+                <img src="images/citizen-times.jpg" alt="citizen times">
+            </a>
+            <a href="https://epaper.dailytribunal24.com" target="_blank">
+                <img src="images/daily-tribunal.png" alt="daily tribunal">
+            </a>
+            <a href="https://edailyindustry.com" target="_blank">
+                <img src="images/daily-industry.png" alt="daily industry">
+            </a>
+            <a href="https://dailymorningobserver.com" target="_blank">
+                <img src="images/morning-observer.png" alt="morning observer">
+            </a>
+            <a href="http://epaper.lakhokantho.com" target="_blank">
+                <img src="images/lakho-kantho.png" alt="lakho kantho">
+            </a>
+            <a href="https://epaper.anandabazar.com" target="_blank">
+                <img src="images/ananda-bazar.png" alt="anandabazar">
+            </a>
         </div>
         <footer></footer>
     </div>
